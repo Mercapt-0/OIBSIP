@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Gilroy";
+    box-sizing: border-box;
+}
+
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{   
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 10% 20%, rgb(151, 10, 130) 0%, rgb(33, 33, 33) 100.2%);
+    animation: mymove 9s infinite;
+}
+
+@keyframes mymove {
+    0% {
+        background: radial-gradient(circle at 10% 20%, rgb(151, 10, 130) 0%, rgb(33, 33, 33) 100.2%);
+      }
+      14% {
+        background: radial-gradient(circle at 1.8% 4.8%, rgb(17, 23, 58) 0%, rgb(58, 85, 148) 90%);
+      }
+      28% {
+        background: linear-gradient(118.4deg, rgb(122, 35, 52) 27.5%, rgb(62, 9, 27) 92.7%);
+      }
+  }
+
+
+#center{
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translate(0%,-50%);
+    height: 80%;
+    width: 70%;
+}
+
+.image-container{
+    overflow: hidden;
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    
+}
+
+img{
+    height: 100%;
+    object-fit: cover;
+}
+#one{
+    width: 0%;
+}
+
+.text{
+    position: absolute;
+    bottom: 40%;
+    left: -10%;
+    overflow:hidden;
+    width: 400px;
+    height: 100px;
+    z-index: 999;
+    color: #fff;
+    
+}
+
+.text h1{
+    top: 100%;
+    font-size: 6vw;
+    position: absolute;
+}
+
+.para{
+    position: absolute;
+    bottom: 10%;
+    left: -10%;
+    overflow:hidden;
+    width: 400px;
+    height: 140px;
+    z-index: 999;
+    color: #093145;
+    background-color:#EBC944 ;
+    border-radius: 2%;
+}
+
+.para p{
+    top: 100%;
+    font-size: larger;
+    position: absolute;
+}
+
+#me{
+    position: absolute;
+      top: 95%;
+      left: 90%;
+  }
